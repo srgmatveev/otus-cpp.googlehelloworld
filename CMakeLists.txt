@@ -31,6 +31,8 @@ add_subdirectory(tests)
 
 target_link_libraries(${CMAKE_PROJECT_NAME}_run ${version_lib})
 
+install(TARGETS ${CMAKE_PROJECT_NAME}_run RUNTIME DESTINATION bin)
+
 set(CPACK_GENERATOR DEB)
 
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
