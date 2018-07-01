@@ -1,7 +1,7 @@
 project(${CMAKE_PROJECT_NAME}_tests)
 
 # Clone Google Test
-if (NOT $ENV{TRAVIS_BUILD_NUMBER})
+
     set(GOOGLETEST_DIR ${CMAKE_SOURCE_DIR}/tests/lib/googletest)
     if (NOT EXISTS ${GOOGLETEST_DIR})
         find_package(Git REQUIRED)
@@ -10,5 +10,4 @@ if (NOT $ENV{TRAVIS_BUILD_NUMBER})
         )
     endif ()
 add_subdirectory(lib/googletest)
-endif ()
 add_subdirectory(unit_tests)

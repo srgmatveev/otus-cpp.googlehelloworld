@@ -1,3 +1,6 @@
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+
+
 find_package(Threads REQUIRED)
 
 add_executable(Unit_Tests_run
@@ -12,7 +15,7 @@ set_target_properties(Unit_Tests_run  PROPERTIES
 
 
 
-include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+
 
 target_link_libraries(Unit_Tests_run gtest gtest_main)
 target_link_libraries(Unit_Tests_run ${CMAKE_THREAD_LIBS_INIT})
