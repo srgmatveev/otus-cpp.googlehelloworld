@@ -3,7 +3,7 @@
 //
 #include "version_lib.h"
 
-//#define MY_LOCAL 1
+
 
 #ifndef MY_LOCAL
 #include "version.h"

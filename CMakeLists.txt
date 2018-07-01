@@ -9,7 +9,7 @@ endif()
 set(SRC_DIR "./src")
 configure_file("${SRC_DIR}/version.h.in" "${SRC_DIR}/version.h")
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp src/my_local.h)
 add_executable(${CMAKE_PROJECT_NAME}_run ${SOURCE_FILES})
 
 set_target_properties(${CMAKE_PROJECT_NAME}_run  PROPERTIES

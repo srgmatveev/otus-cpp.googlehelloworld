@@ -3,5 +3,6 @@
 //
 
 #pragma once
+#include "my_local.h"
 
 int get_version();
