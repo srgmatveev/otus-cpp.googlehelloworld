@@ -9,6 +9,6 @@ if (NOT $ENV{TRAVIS_BUILD_NUMBER})
                 COMMAND ${GIT_EXECUTABLE} clone https://github.com/google/googletest ${GOOGLETEST_DIR}
         )
     endif ()
-endif ()
 add_subdirectory(lib/googletest)
+endif ()
 add_subdirectory(unit_tests)
