@@ -4,10 +4,10 @@ before_script:
   - sudo apt-get install libgtest-dev -y
   - sudo apt-get install google-mock -y
 #  - sudo apt-get install doxygen -y
-cd /usr/src/gtest/
-sudo cmake CMakeLists.txt
-sudo make
-sudo cp *.a /usr/lib
+  - cd /usr/src/gtest/
+  - sudo cmake CMakeLists.txt
+  - sudo make
+  - sudo cp *.a /usr/lib
 
 script:
   - cmake .
