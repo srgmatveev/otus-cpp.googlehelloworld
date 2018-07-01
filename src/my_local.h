@@ -3,5 +3,5 @@
 //
 
 #pragma once
-//#define MY_LOCAL 1 # локальная сборка. в случае travis-ci закомментировать.
+#define MY_LOCAL 1 # локальная сборка. в случае travis-ci закомментировать.
 
